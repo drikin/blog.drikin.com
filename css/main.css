@@ -3,7 +3,7 @@
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
+;* Kroc Camen, and the H5BP dev community and team.
  */
 
 /* ==========================================================================
@@ -110,17 +110,12 @@ body {
 iframe {
 }
 
-#adsense-bottom {
-    margin 10px auto;
-    width: 720px;
-}
-
 #adsense-right {
     position: fixed;
 }
 
 #bottom {
-    height: 50px;
+    margin-top: 10px;
     font-size: 0.7em;
     width: 100%;
 }
@@ -174,6 +169,7 @@ iframe {
     -o-flex-grow:1;
     flex-grow:1;
     min-width: 220px;
+    min-height: 100%;
     padding: 10px;
     border: solid 1px;
     border-color: #ede5e9;
@@ -256,7 +252,28 @@ iframe {
     display: -o-flex;
     display: flex;
     -webkit-flex-direction:row;
+    -moz-flex-direction:row;
+    -ms-flex-direction:row;
+    -o-flex-direction:row;
+    flex-direction:row;
     -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
 }
 
 .flex-center {
@@ -265,6 +282,14 @@ iframe {
     -ms-align-items: center;
     -o-align-items: center;
     align-items: center;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.flex-horizontal-center {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     -ms-justify-content: space-between;
