@@ -71,12 +71,17 @@
         <!-- Facebook SDK }}} -->
 
         <!-- Add your site or application content here -->
-        <div id='top' class='flex flex-vertical'>
+        <div id='top' class='flex flex-vertical-center flex-horizontal-space-between'>
             <div id='title'>
                 <!--<a href="<$mt:BlogURL$>" accesskey='1'><$mt:BlogName encode_html='1'$></a>-->
                 <a href="<$mt:BlogURL$>" accesskey='1'>
                     <img src='//blog.drikin.com//drikin_face_logo.png'>ddxv
                 </a>
+            </div>
+            <div id='social-button-top'>
+                <a href='https://twitter.com/share' target="_blank"><img class='social-icon-top' src='/img/Twitter_logo_blue.png'></a>
+                <a href='http://www.facebook.com/sharer.php?u=<$MTEntryPermalink$>&amp;t=<$mt:EntryTitle encode_html="1"$>' rel="nofollow" target="_blank"><img class='social-icon-top' src='/img/FB-f-Logo__blue_72.png'></a>
+                <a href="http://b.hatena.ne.jp/entry/add/<$MTEntryPermalink$>" target="_blank"><img class='social-icon-top' src='/img/bbtn-s_v3@2x.png'></a>
             </div>
         </div>
         <div id='middle' class='flex center'>
@@ -89,7 +94,7 @@
                             Hatena.BookmarkWidget.title = "人気のエントリー";
                             Hatena.BookmarkWidget.sort  = "hot";
                             Hatena.BookmarkWidget.width = 0;
-                            Hatena.BookmarkWidget.num   = 5;
+                            Hatena.BookmarkWidget.num   = 10;
                             Hatena.BookmarkWidget.theme = "hatenadiary";
                             Hatena.BookmarkWidget.load();
                         </script>
