@@ -87,6 +87,7 @@
         <div id='middle' class='flex center'>
             <div id='left' class='center'>
                 <div id='left-static-non'>
+                    <!-- Hatena {{{ -->
                     <div id='hatena'>
                         <script language="javascript" type="text/javascript" src="http://b.hatena.ne.jp/js/widget.js" charset="utf-8"></script>
                         <script language="javascript" type="text/javascript">
@@ -99,6 +100,7 @@
                             Hatena.BookmarkWidget.load();
                         </script>
                     </div>
+                    <!-- Hatena }}} -->
                 </div>
             </div>
             <div id='center'>
@@ -211,31 +213,31 @@
                     <!-- X:S ZenBackWidget --><div id="zenback-widget-loader"></div><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var r=Math.ceil((new Date()*1)*Math.random());var j=d.createElement("script");j.id=i;j.async=true;j.src="//w.zenback.jp/v1/?base_uri=http%3A//blog.drikin.com/&nsid=89741841632620263%3A%3A89741847001336796&rand="+r;d.body.appendChild(j);}}(document,"zenback-widget-js");</script><!-- X:E ZenBackWidget -->
                 </div>
                 <!-- ZenBack }}} -->
-
-                <!-- Disqus {{{ -->
-                <div id='disqus'>
-                    <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-                    var disqus_shortname = 'driftdiaryxv'; // required: replace example with your forum shortname
-
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                     })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-                </div>
-                <!-- Disqus }}} -->
             </div>
 
         </div>
 
 
         <div id='bottom' class='flex-column flex-center'>
+            <!-- Disqus {{{ -->
+            <div id='disqus'>
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'driftdiaryxv'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            <!-- Disqus }}} -->
+
             <!-- Adsense Bottom {{{ -->
             <div id='adsense-bottom'>
                 <!-- HTML Boilerplate Bottom -->
@@ -262,6 +264,14 @@
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="/js/plugins.js"></script>
         <script src="/js/main.js"></script>
+        <script type="text/javascript">
+            var FLICKREX_API_KEY = "18c9f79a96fd34c3b3f16a93fb0a5d3c"; // this is optional
+            var FLICKREX_EXIF_FORMAT = "%camera%(%Lens%), %Focal Length%,  f %aperture%, ISO %ISO Speed%, %Exposure% sec, %Exposure Bias% EV";
+            var FLICKREX_EXIF_JQUERY_SELECTOR = "#content img";
+        </script>
+        <script>(window.jQuery && parseFloat(window.jQuery().jquery) > 1.5) || document.write('<script src="//flickrex.drikin.com/master/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+        <script src="//flickrex.drikin.com/master/flickrex.min.js"></script>
+        <script src="//flickrex.drikin.com/master/exifex.min.js"></script>
         <!-- Script }}} -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. {{{ -->

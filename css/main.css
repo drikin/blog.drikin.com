@@ -148,8 +148,8 @@ iframe {
 
 #disqus {
     font-size: 12px;
-    margin: 260px 10px 10px 10px;
-    max-width: 280px;
+    width: 700px;
+    margin: 10px 0;
 }
 
 #disqus_thread {
@@ -172,8 +172,8 @@ iframe {
     flex-grow:200px;
     min-width: 200px;
     padding: 10px;
-    border: solid 1px;
-    border-color: #ede5e9;
+    //border: solid 1px;
+    //border-color: #ede5e9;
 }
 
 #left li {
@@ -207,8 +207,8 @@ iframe {
     -o-flex-grow:300px;
     flex-grow:200px;
     min-width: 300px;
-    border: solid 1px;
-    border-color: #ede5e9;
+    //border: solid 1px;
+    //border-color: #ede5e9;
 }
 
 #social-buttons div, #social-buttons iframe{
@@ -217,16 +217,14 @@ iframe {
 }
 
 #social-button-top {
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 #title {
     color: #bf243e;
     font-size: 1.41em;
     font-weight: bold;
-    //text-shadow: 0px 1px 0px #ad5472;
-    height: 100%;
-    margin-top: 2px;
+    margin: 2px 0 0 10px;
 }
 
 #title a {
@@ -237,15 +235,14 @@ iframe {
 #title img {
     width: 26px;
     height: 26px;
-    margin: -4px 5px auto 10px;
+    margin: -4px 5px 0 0;
 }
 
 #top {
     height: 36px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 1px gray;
     width: 100%;
-    margin-bottom: 10px;
     position: fixed;
     top: 0;
     left: 0;
@@ -370,17 +367,24 @@ iframe {
 .social-icon-top {
     width: 20px;
     height: 20px;
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 @media(min-width: 500px) {
+    #disqus {
+        width: 90%;
+    }
     .html-boilerplate-bottom {
-        width: 468px;
-        height: 60px;
+        width: 300px;
+        height: 250px;
     }
 }
 
 @media(min-width: 800px) {
+    #disqus {
+        width: 700px;
+    }
+
     .html-boilerplate-bottom {
         width: 728px;
         height: 90px;
@@ -389,18 +393,11 @@ iframe {
 
 @media only screen and (max-width: 1060px) {
     #adsense-right {
-        position: static;
-    }
-
-    #left-static {
-        position: static;
+        display: none;
     }
 
     #hatena {
         width: 100%;
-    }
-
-    #right {
     }
 
     #zenback {
@@ -413,22 +410,15 @@ iframe {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 568px) {
-    #adsense-right {
-        position: static;
+    #disqus {
+        width: 90%;
     }
-
-    #left-static {
-        position: static;
+    #adsense-right {
+        display: none;
     }
 
     #hatena {
         width: 100%;
-    }
-
-    #title {
-        background-size: 32px;
-        font-size: 24px;
-        padding-left: 34px;
     }
 }
 
