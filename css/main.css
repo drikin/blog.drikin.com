@@ -143,7 +143,7 @@ iframe {
 }
 
 #content img {
-    width: 100%;
+    max-width: 100%;
 }
 
 #disqus {
@@ -199,13 +199,12 @@ iframe {
 }
 
 #right {
-    background-color: white;
     font-size: 0.74em;
     -webkit-flex-grow:300px;
     -moz-flex-grow:300px;
     -ms-flex-grow:300px;
     -o-flex-grow:300px;
-    flex-grow:200px;
+    flex-grow:300px;
     min-width: 300px;
     //border: solid 1px;
     //border-color: #ede5e9;
@@ -240,7 +239,8 @@ iframe {
 
 #top {
     height: 36px;
-    background-color: rgba(255, 255, 255, 0.8);
+    //background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(5, 5, 5, 0.8);
     box-shadow: 0 1px gray;
     width: 100%;
     position: fixed;
@@ -391,10 +391,18 @@ iframe {
     }
 }
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1350px) {
     #adsense-right {
-        display: none;
+        position: static;
     }
+
+    #right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+
 
     #hatena {
         width: 100%;
@@ -414,7 +422,7 @@ and (max-device-width : 568px) {
         width: 90%;
     }
     #adsense-right {
-        display: none;
+        position: static;
     }
 
     #hatena {
