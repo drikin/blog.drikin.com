@@ -111,6 +111,10 @@ body {
 iframe {
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 1.61em;
+}
+
 #adsense-right {
     position: fixed;
 }
@@ -135,7 +139,7 @@ iframe {
     line-height: 1.61;
     max-width: 800px;
     margin: 0 auto 10px auto;
-    padding: 0 10px;
+    padding: 0 1em;
 }
 
 #content h1 {
@@ -198,6 +202,10 @@ iframe {
     top: 60px;
 }
 
+#post-info {
+    margin-top: -1.5em;
+}
+
 #right {
     font-size: 0.74em;
     -webkit-flex-grow:300px;
@@ -231,14 +239,18 @@ iframe {
     text-decoration: none;
 }
 
-#title img {
-    width: 26px;
-    height: 26px;
-    margin: -4px 5px 0 0;
+#title-face {
+    height: 25px;
+    margin: -6px 3px 0 -1px;
+}
+
+#title-logo {
+    height: 30px;
+    margin: -2px 0 0 -6px;
 }
 
 #top {
-    height: 36px;
+    height: 38px;
     //background-color: rgba(255, 255, 255, 0.8);
     background-color: rgba(5, 5, 5, 0.8);
     box-shadow: 0 1px gray;
@@ -368,6 +380,11 @@ iframe {
     width: 20px;
     height: 20px;
     margin-left: 5px;
+}
+
+.sub-text, .flickr-exif {
+    color: gray;
+    font-size: 0.84em;
 }
 
 @media(min-width: 500px) {

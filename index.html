@@ -75,7 +75,8 @@
             <div id='title'>
                 <!--<a href="<$mt:BlogURL$>" accesskey='1'><$mt:BlogName encode_html='1'$></a>-->
                 <a href="<$mt:BlogURL$>" accesskey='1'>
-                    <img src='//blog.drikin.com//drikin_face_logo.png'>ddxv
+                    <img id='title-face' src='/img/drikin-face.png'>
+                    <img id='title-logo' src='/img/driftdiarylogo.png'>
                 </a>
             </div>
             <div id='social-button-top'>
@@ -116,7 +117,7 @@
 <!-- Dummy Content }}} -->
 
                     <h1>Mavericks Safariを以前のサクサク軽快Safariに戻す方法</h1>
-                    <div>
+                    <div id='post-info' class='sub-text'>
                         
                             Posted by <span class="vcard author"><a class="fn url" href="http://blog.drikin.com/">drikin</a></span> on <abbr class="published" title="2013-12-08T08:53:52+09:00">2013年12月 8日 08:53</abbr>
                         
@@ -197,7 +198,7 @@
                     <!-- Dummy Content }}} -->
 
                     <h1><$mt:EntryTitle$></h1>
-                    <div>
+                    <div id='post-info' class='sub-text'>
                         <mt:If tag="EntryAuthorDisplayName">
                             Posted by <span class="vcard author"><$mt:EntryAuthorLink show_hcard="1"$></span> on <abbr class="published" title="<$mt:EntryDate format_name="iso8601"$>"><$mt:EntryDate format="%x %X"$></abbr>
                         <mt:Else>
@@ -232,6 +233,12 @@
                     </script>
                     <a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="jp"></a>
                     <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+                    <span>
+                        <script type="text/javascript" src="//media.line.naver.jp/js/line-button.js?v=20131101" ></script>
+                        <script type="text/javascript">
+                        new jp.naver.line.media.LineButton({"pc":false,"lang":"ja","type":"e"});
+                        </script>
+                    </span>
                 </div>
                 <!--- Social Buttons }}} -->
             </div>
@@ -323,7 +330,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-50655-3');ga('send','pageview');
         </script>
         <!-- Google Analytics }}} -->
     </body>
