@@ -98,12 +98,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+a {
+    color: rgb(69, 69, 69);
+    text-decoration: none;
+}
+
 blockquote {
     border-left: solid 3px;
     padding-left: 0.5em;
 }
 
 body {
+    color: rgb(69, 69, 69);
     margin-top: 36px;
     margin-bottom: 0;
     //background-color: #eaeaea;
@@ -141,20 +147,19 @@ h2, h3, h4, h5, h6 {
 }
 
 #content {
-    color: rgb(69, 69, 69);
     line-height: 1.61;
-    max-width: 800px;
-    margin: 0 auto 10px auto;
+    max-width: 640px;
+    margin: 30px auto 10px auto;
     padding: 0 1em;
 }
 
 #content h1 {
     color: black;
+    line-height: 1.2em;
 }
 
 #content img {
     max-width: 100%;
-    margin:1em 0;
 }
 
 #disqus {
@@ -176,6 +181,33 @@ h2, h3, h4, h5, h6 {
     width: 200px;
 }
 
+#index .asset-more-link {
+    clear: both;
+    margin-bottom: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+#index img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    float: left;
+}
+
+#index h2 {
+    margin: 10px 0 0 0;
+}
+
+#index .entry-content {
+    display: block;
+}
+
+#index .flickr-exif {
+    display: none;
+}
 
 #top {
     background-color: rgba(0,0,0,0.8);
@@ -231,7 +263,6 @@ h2, h3, h4, h5, h6 {
     //color: rgb(69, 69, 69);
     //color: #b0b0b0;
     color: gray;
-    text-decoration: none;
 }
 
 #middle {
@@ -244,11 +275,6 @@ h2, h3, h4, h5, h6 {
 
 #right {
     font-size: 0.74em;
-    -webkit-flex-grow:300px;
-    -moz-flex-grow:300px;
-    -ms-flex-grow:300px;
-    -o-flex-grow:300px;
-    flex-grow:300px;
     min-width: 300px;
     //border: solid 1px;
     //border-color: #ede5e9;
@@ -272,7 +298,6 @@ h2, h3, h4, h5, h6 {
 
 #title a {
     color: #bf243e;
-    text-decoration: none;
 }
 
 #title-face {
@@ -443,7 +468,7 @@ h2, h3, h4, h5, h6 {
 .social-icon-top {
     width: 20px;
     height: 20px;
-    margin-left: 12px;
+    margin-left: 5px;
 }
 
 .sub-text, .flickr-exif {
@@ -452,7 +477,6 @@ h2, h3, h4, h5, h6 {
 }
 
 .flickr-exif {
-    margin-top: -1em;
     margin-bottom: 2em;
 }
 
