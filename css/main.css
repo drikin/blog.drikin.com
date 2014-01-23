@@ -99,7 +99,8 @@ textarea {
    ========================================================================== */
 
 a {
-    color: rgb(69, 69, 69);
+    color: black;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -153,13 +154,20 @@ h2, h3, h4, h5, h6 {
     padding: 0 1em;
 }
 
-#content h1 {
+#content h1, #index h1 {
+    font-size: 1.61em;
     color: black;
     line-height: 1.2em;
 }
 
+#index h1 a {
+    color: black;
+}
+
 #content img {
-    max-width: 100%;
+    max-width: 98%;
+    border: 1px solid #c2c2c2;
+    padding: 1%;
 }
 
 #disqus {
@@ -177,20 +185,28 @@ h2, h3, h4, h5, h6 {
 }
 
 #hatena {
-    font-size: 0.74em;
-    width: 200px;
+    font-size: 0.8em;
+    width: 250px;
+}
+
+#hatena-bookmark-widget0 {
+    background-color:#f8f8f8;
+    padding: 10px;
+    margin-top: 60px;
+    margin-left: 30px;
 }
 
 #index .asset-more-link {
     clear: both;
     margin-bottom: 1.5em;
-    padding-top: 0.5em;
     padding-bottom: 0.5em;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
+    text-align: right;
 }
 
-#index img {
+#index img, #index iframe{
+    margin-top: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
     width: 300px;
@@ -270,7 +286,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #post-info {
-    margin-top: -1.5em;
+    margin-top: -1em;
 }
 
 #right {
@@ -441,7 +457,7 @@ h2, h3, h4, h5, h6 {
 .hatena-moduletitle {
     font-weight: bold;
     font-size: 1.2em;
-    margin-top: 40px;
+    margin-top: 10px;
     margin-left: 10px;
     text-decoration: underline;
 }
@@ -477,6 +493,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .flickr-exif {
+    margin-top: 3px;
     margin-bottom: 2em;
 }
 
@@ -518,6 +535,11 @@ h2, h3, h4, h5, h6 {
         flex-basis: 468px;
     }
 
+    #hatena-bookmark-widget0 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     #zenback {
         max-width: 800px;
         margin: 0 auto;
@@ -526,6 +548,10 @@ h2, h3, h4, h5, h6 {
 }
 
 @media only screen and (max-width: 767px) {
+    #hatena-bookmark-widget0 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 @media only screen
@@ -543,6 +569,9 @@ and (max-device-width : 568px) {
 
     #hatena {
         width: 100%;
+    }
+    #hatena-bookmark-widget0 {
+        margin: 0px;
     }
 }
 
