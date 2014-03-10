@@ -166,6 +166,7 @@ h2, h3, h4, h5, h6 {
 
 #content img {
     max-width: 98%;
+    max-height: 550px;
     border: 1px solid #c2c2c2;
     padding: 1%;
 }
@@ -223,6 +224,13 @@ h2, h3, h4, h5, h6 {
 
 #index .flickr-exif {
     display: none;
+}
+
+#google-search {
+    float: right;
+    width: 300px;
+    height: 20px;
+    margin-top: -10px;
 }
 
 #top {
@@ -572,6 +580,9 @@ and (max-device-width : 568px) {
     }
     #hatena-bookmark-widget0 {
         margin: 0px;
+    }
+    #google-search {
+        display: none;
     }
 }
 
