@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" prefix="og: http://ogp.me/ns#" itemscope itemtype="http://schema.org/Article">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>[D]&nbsp;<$mt:EntryTitle encode_html="1"$></title>
-        <meta name="description" content="">
+        <meta name="description" content="<$mt:EntryExcerpt$>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Facebook {{{ -->
-        <meta property="og:title" content="<$mt:BlogName encode_html='1'$>">
-        <!-- <meta property="og:description" content=""> -->
-        <!-- <meta property="og:image" content=""> -->
-        <!-- }}} -->
+        <meta itemprop="name" content="[D]&nbsp;<$mt:EntryTitle encode_html='1'$>">
+        <meta itemprop="description" content="<$mt:EntryExcerpt$>">
+
+        <meta property="og:title" content="[D]&nbsp;<$mt:EntryTitle encode_html='1'$>" />
+        <meta property="og:type" content="article" />
+        <meta property="description" content="<$mt:EntryExcerpt$>" />
 
         <!-- Twitter {{{ -->
         <meta name="twitter:card" content="summary">
         <!-- <meta name="twitter:site" content="@site_account"> -->
         <meta name="twitter:creator" content="@drikin">
         <!-- <meta name="twitter:url" content="http://www.example.com/path/to/page.html"> -->
-        <meta name="twitter:title" content="<$mt:BlogName encode_html='1'$>">
-        <!-- <meta name="twitter:description" content=""> -->
+        <meta name="twitter:title" content="[D]&nbsp;<$mt:EntryTitle encode_html='1'$>">
+        <meta name="twitter:description" content="<$mt:EntryExcerpt$>">
         <!-- <meta name="twitter:image" content="http://www.example.com/path/to/image.jpg"> -->
         <!-- }}} -->
 
@@ -75,8 +76,8 @@
             <div id='title'>
                 <!--<a href="<$mt:BlogURL$>" accesskey='1'><$mt:BlogName encode_html='1'$></a>-->
                 <a href="<$mt:BlogURL$>" accesskey='1'>
-                    <img id='title-face' src='/img/drikin-face.png'>
-                    <img id='title-logo' src='/img/driftdiarylogo.png'>
+                    <div id='title-face'></div>
+                    <h1 id='title-logo'>Drift Diary XV</h1>
                 </a>
             </div>
             <div id='social-button-top'>
@@ -166,7 +167,9 @@
 
     <p>不覚にも昨日まで気づかなかったんですが、気づいたらMavericksのSafari 7ってタブ毎にプロセスを生成するGoogle Chromeスタイルにアーキテクチャが変わってたんですね。</p>
 
-    <p>もともと、Safariが採用しているWebKitというエンジンはシングルプロセスモデルで、それだと１つのタブがクラッシュしただけでアプリ巻き込んでしまうのが安定性として問題ってことで、Google Chromeは独自にWebKitを拡張して、タブごとにプロセスを生成するモデルにいち早く切り替えました。本家WebKitもWebKit2を開発。Safari 5.1でようやくUIとレンダリングのプロセス切り離しに成功しました。Google Chromeとはアプローチは違うものの、タブがクラッシュしてもSafari自体は生き残れるようになったんですが、<strong>MavericksのSafari 7ではタブ毎にプロセスを立ち上げるまさにGoogle Chromeモデルに切り替え</strong>たんですね。</p>
+<div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-post" data-href="https://www.facebook.com/drikin/posts/10152334315061098" data-width="466"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/drikin/posts/10152334315061098">Post</a> by <a href="https://www.facebook.com/drikin">Kohichi Aoki</a>.</div></div>
+
 
     <p>オリジナルのWebKit2のプロセスモデルとGoogle Chromeのプロセスモデルと、どっちにも長所短所があって、どちらが正しいとか断言するのは難しいんですが、個人的には旧WebKit2のぽプロセスモデルはバランスが良くて悪くないなと思ってたのでちょっと残念。</p>
 
