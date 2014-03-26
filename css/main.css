@@ -151,7 +151,7 @@ h2, h3, h4, h5, h6 {
     line-height: 1.61;
     max-width: 640px;
     margin: 30px auto 10px auto;
-    padding: 0 1em;
+    padding: 0 1em 2em 0;
 }
 
 #content h1, #index h1 {
@@ -325,13 +325,22 @@ h2, h3, h4, h5, h6 {
 }
 
 #title-face {
-    height: 25px;
-    margin: -6px 3px 0 -1px;
+    background-image: url('/img/drikin-face.png');
+    background-repeat: no-repeat;
+    background-size: 33px;
+    height: 33px;
+    float: left;
+    width: 33px;
+    margin-top: 5px;
 }
 
 #title-logo {
+    background-image: url('/img/driftdiarylogo.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    color: rgba(0,0,0,0);
     height: 30px;
-    margin: -2px 0 0 -6px;
+    margin: -2px 0 0 35px;
 }
 
 #top {
